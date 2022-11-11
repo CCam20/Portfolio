@@ -2,6 +2,8 @@ import './App.css';
 import MainContainer from './container/MainContainer';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {Link} from 'react-router-dom'
+import NavBar from './components/NavBar';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -13,9 +15,9 @@ function App() {
       <NavBar />
         <Routes>
         <MainContainer />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<MainContainer />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="*" element={<ErrorPage/>} /> 							
+          {/* <Route path="*" element={<ErrorPage/>} /> 							 */}
         </Routes>
     </Router>
     </div>
