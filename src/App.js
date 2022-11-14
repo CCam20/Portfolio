@@ -14,10 +14,8 @@ function App() {
     <Router>
       <NavBar />
         <Routes>
-        <MainContainer />
           <Route path="/" element={<MainContainer />} />
           <Route path="/projects" element={<Projects />} />
-          {/* <Route path="*" element={<ErrorPage/>} /> 							 */}
         </Routes>
     </Router>
     </div>
