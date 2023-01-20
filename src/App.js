@@ -1,7 +1,5 @@
 import './App.css';
-import MainContainer from './container/MainContainer';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {Link} from 'react-router-dom'
 import NavBar from './components/NavBar';
 import Projects from './components/Projects';
 import Bio from './components/Bio';
